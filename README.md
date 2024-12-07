@@ -1,6 +1,8 @@
 # Modulus
 
-<img src="./modulus.jpeg" width="200" height="200"/>
+<p align="center">
+  <img src="./modulus.jpeg" width="33%">
+</p>
 
 # Introduction
 Modulus is a dependency management library. Modulus is built with the following principles in mind:
