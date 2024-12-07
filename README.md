@@ -52,9 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     HelloWorldExportables.self
   ])
 
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		return true
-	}
 }
 ```
 
