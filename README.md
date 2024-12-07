@@ -21,7 +21,7 @@ public protocol HelloWorldService {
 
 class HelloWorldServiceImpl: HelloWorldService {
   func hello() async -> HelloWorldResult {
-    // Asynchronously logic for HelloWorldResult
+    // Asynchronous logic for HelloWorldResult
   }
 }
 ```
@@ -33,6 +33,7 @@ In `Modulus`, all of a modules exports are defined in that modules `Exportables`
 ```swift
 struct HelloWorldExportables: Exportables {
   @Export var helloWorldService: HelloWorldService = HelloWorldServiceImpl()
+
   // More exports
 
   init() {}
@@ -67,6 +68,7 @@ class HelloWorldViewModel {
 
   func sayHello() async {
     let result = await helloWorldService.hello()
+
     // Some other logic
   }
 }
@@ -82,13 +84,16 @@ a mock exportables which acts as a default.
 class HelloWorldServiceMock: HelloWorldService {
 }
 
-struct HelloWorldExportablesMock: Exportables {
+public struct HelloWorldExportablesMock: Exportables {
   @Export var helloWorldService: HelloWorldService = HelloWorldServiceMock()
+
   // More exports
 
-  init() {}
+  public init() {}
 }
 ```
+
+> Note: It is important that `HelloWorldExportablesMock` is `public` so dependent modules can leverage our mocks.
 
 ## Write a test
 Tests dependent on `Modulus` can be run in parallel. To start a test with our mock dependencies
