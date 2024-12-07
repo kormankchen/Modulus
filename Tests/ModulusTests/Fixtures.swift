@@ -17,7 +17,7 @@ enum Fixtures {
 	final class MockDependencyTwo: Dependency {
 	}
 
-	final class MockExportable: Exportables {
+	struct MockExportable: Exportables {
 		@Export var dependency: Dependency = MockDependencyOne()
 	}
 }

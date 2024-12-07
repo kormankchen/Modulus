@@ -26,6 +26,13 @@ final public class Modulus {
 		}
 	}
 
+	public static func withExportables<R>(_ exportables: [Exportables.Type], _ operation: () async throws -> R) async rethrows -> R {
+		try await Modulus.$container.withValue(container.copy()) {
+			Modulus.initialize(with: exportables)
+			return try await operation()
+		}
+	}
+
 	public static func reset() {
 		container.reset()
 	}
