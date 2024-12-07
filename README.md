@@ -1,5 +1,7 @@
 # Modulus
 
+![Logo](./modulus.jpeg)
+
 # Introduction
 Modulus is a dependency management library. Modulus is built with the following principles in mind:
 
