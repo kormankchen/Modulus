@@ -7,10 +7,10 @@
 # Introduction
 Modulus is a dependency management library. Modulus is built with the following principles in mind:
 
-- **Simplicity**: Dependency management tools should be clear & simple.
+- [x] **Simplicity**: Dependency management tools should be clear & simple.
 The tools engineers use should be easily understood at a glance. Creating/leveraging dependencies
 should require minimal code.
-- **Testability**: Dependencies should require minimal effort to mock in tests.
+- [x] **Testability**: Dependencies should require minimal effort to mock in tests.
 
 # Usage
 This section will describe/showcase principles of the framework with an example.
