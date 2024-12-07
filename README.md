@@ -1,6 +1,6 @@
 # Modulus
 
-![Logo](./modulus.jpeg)
+<img src="./modulus.jpeg" width="200" height="200"/>
 
 # Introduction
 Modulus is a dependency management library. Modulus is built with the following principles in mind:
