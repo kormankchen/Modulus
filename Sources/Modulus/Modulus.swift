@@ -7,7 +7,7 @@
 
 import Foundation
 
-final public class Modulus {
+final public class Modulus: Sendable {
 	@TaskLocal static var container = Container()
 	let exportables: [Exportables]
 

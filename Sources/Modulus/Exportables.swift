@@ -5,6 +5,6 @@
 //  Created by Korman Chen on 12/3/24.
 //
 
-public protocol Exportables {
+public protocol Exportables: Sendable {
 	init()
 }
