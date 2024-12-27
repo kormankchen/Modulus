@@ -7,7 +7,7 @@
 
 @testable import Modulus
 
-protocol Dependency: Sendable {
+protocol Dependency {
 }
 
 enum Fixtures {

@@ -1,6 +1,6 @@
 import Foundation
 
-@propertyWrapper public struct Export<Wrapped>: Sendable where Wrapped: Sendable {
+@propertyWrapper public struct Export<Wrapped> {
 	private var _wrapped: Wrapped {
 		get {
 			Modulus.container.dependency(for: Wrapped.self)
